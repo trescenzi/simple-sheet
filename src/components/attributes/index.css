@@ -1,0 +1,20 @@
+.physical, .mental{
+  display: inline-block;
+}
+
+.attribute input {
+  width: 35px;
+}
+
+.attribute .name {
+  width: 30px;
+  display: inline-block;
+}
+
+.physical .attribute {
+  padding-right: 5px;
+}
+
+.attributes {
+  margin-top: 10px;
+}

@@ -1,13 +1,13 @@
 import {h} from 'hyperapp';
 import './index.css';
+import {Textbox} from '../textbox';
 
 const AttrInput = ({name, value, update}) => {
   const modifier = Math.ceil((value - 10) /2);
-  const oninput = ({target: {value}}) => update(value);
 
   return <div class={'attribute ' + name}>
     <span class="name">{name}: </span>
-    <input value={value} placeholder={name} oninput={oninput}/>
+    <Textbox value={value} placeholder={name} oninput={update}/>
     <span>
       {modifier > 0 ? ' +' : ' '}{modifier}
     </span>

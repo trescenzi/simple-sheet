@@ -21,7 +21,6 @@ app({
       placeholder='name'>
     </input>
     <Attributes.view {...state.attributes} update={actions.attributes.updateScore} />
-    <test-thing name="test"></test-thing>
   </div>
   ),
   actions,
